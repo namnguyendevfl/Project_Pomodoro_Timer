@@ -16,7 +16,7 @@ function TimerSessionDisplay (props) {
   duration = minutesToDuration(duration);
 
   //Display the timer if the session is active
-  return props.activeSession === null && <div className="row mb-2">
+  return props.activeSession === true && <div className="row mb-2">
       <div className="col">
       {/* TODO: Update message below to include current session (Focusing or On Break) total duration */}    
       <h2 data-testid="session-title">
