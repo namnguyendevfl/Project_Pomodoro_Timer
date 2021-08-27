@@ -108,7 +108,7 @@ function Pomodoro() {
   //Converting the time remainer to the mm:ss format
   const timeRemainingInMinutes = secondsToDuration(session?.timeRemaining);
   
-  //Reset all state variables to the initial values of so the initial screen appears when the stop button is clicked 
+  //Reset all state variables to the initial values so that the initial screen appears when the stop button is clicked 
   const stop = (event) => {
     event.preventDefault();
     setFocusDuration(defaultFocusDuration);
